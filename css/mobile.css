@@ -1,0 +1,37 @@
+@media screen and (orientation: portrait) and (max-width: 320px) and (max-height: 480px) {
+    .gifBild {
+      height: 50%;
+      width: 50%;
+    }
+  
+    .video {
+      display: none;
+    }
+  
+    .nasa {
+      display: none;
+    }
+  
+    * {
+      -o-transition-property: none !important;
+      -moz-transition-property: none !important;
+      -ms-transition-property: none !important;
+      transition-property: none !important;
+      animation: none !important;
+    }
+  }
+  
+  @media screen and (orientation: landscape) and (max-width: 480px) and (max-height: 320px) {
+    .video {
+      display: flex;
+      flex-flow: column;
+    }
+  
+    .gif,
+    .nasa {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  

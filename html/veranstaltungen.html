@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web-Technologien</title>
+    <meta name="language" content="de">
+    <meta name="author" content="Driton Koskovik">
+    <meta name="date" content="2020-11-29">
+    <meta name="keywords" content="meinFussabdruck, ökologischer Fussabdruck, Klimawandel ">
+    <meta name="description" content="Alle Informationen für unsere Veranstaltungen">
+    <meta name="robots" content="index, follow">
+    <meta name="audience" content="alle">
+    <meta name="page-topic" content="Hochschule Offenburg">
+    <meta name="revisit-after" CONTENT="7 days">
+    <meta name="expires" content="0">
+    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/default.css">
+    <title>Mein Fussabdruck</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <script src="../js/veranstaltungen.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"><img src="../images/LogoNeu.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul id="nav1" class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./ueberUns.html"
+                            id="navbarDropdownMenu1" role="button" data-toggle="dropdown"> Über uns </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="./ueberUns.html#allgemein">Allgemein</a>
+                            <a class="dropdown-item" href="./ueberUns.html#whyus">Warum es uns gibt</a>
+                            <a class="dropdown-item" href="./ueberUns.html#beratungsstellen">Beratungsstellen</a>
+                            <a class="dropdown-item" href="./ueberUns.html#benefits">Was DU davon hast</a>
+                            <a class="dropdown-item" href="./ueberUns.html#partner">Unsere Partner</a>
+                            <a class="dropdown-item" href="./ueberUns.html#referenzen">Referenzen</a>
+                            <a class="dropdown-item" href="./fakten.html#">Fakten</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./potentiale.html">Potentiale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./veranstaltungen.html">Veranstaltungen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./beratungsstellen.html">Beratungsstellen</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./allerlei.html">Allerlei</a></li>
+                </ul>
+                <ul id="nav2" class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="./suche.html"><i class="fas fa-search"></i> Suche</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./meinKonto.html"><i class="fas fa-user-alt"></i>
+                            mein Konto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./kontakt.html"><i class="fas fa-envelope"></i>
+                            Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <header class="p-1 text-center">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </header>
+    <main class="p-2">
+
+    </main>
+
+    <div class="tables">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Zeitraum_von</th>
+                    <th scope="col">Zeitraum_bis</th>
+                    <th scope="col">Veranstaltung</th>
+                    <th scope="col">Preiskategorie</th>
+                    <th scope="col">Sitzplatz</th>
+                    <th scope="col">Zusatzspende</th>
+                </tr>
+
+            </thead>
+            <tbody id="tableJS" >
+                <tr>
+                    <td></td>
+                    <td>10.10.2020</td>
+                    <td>11.10.2020</td>
+                    <td>erste Veranstaltung</td>
+                    <td>Kleinkind</td>
+                    <td>55</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>11.10.2020</td>
+                    <td>12.10.2020</td>
+                    <td>zweite Veranstaltung</td>
+                    <td>Kleinkind</td>
+                    <td>56</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>12.10.2020</td>
+                    <td>13.10.2020</td>
+                    <td>dritte Veranstaltung</td>
+                    <td>Erwachsener</td>
+                    <td>57</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>13.10.2020</td>
+                    <td>14.10.2020</td>
+                    <td>vierte Veranstaltung</td>
+                    <td>Kleinkind</td>
+                    <td>58</td>
+                    <td>120</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>14.10.2020</td>
+                    <td>15.10.2020</td>
+                    <td>fünfte Veranstaltung</td>
+                    <td>Schüler</td>
+                    <td>59</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>15.10.2020</td>
+                    <td>16.10.2020</td>
+                    <td>sechste Veranstaltung</td>
+                    <td>Rentner</td>
+                    <td>60</td>
+                    <td>450</td>
+                </tr>
+
+            </tbody>
+            </table>
+    </div>
+
+    <form>
+        <div class="card">
+
+            <div class="card-header">
+                <h2>Veranstaltungen</h2>
+            </div>
+
+            <div class="card-body">
+
+                <div class="selectList">
+                    <label for="fahrzeugTyp" class="col-sm-2">Fahrzeugtyp</label>
+                    <select name="fahrzeugTyp" size="2" multiple required>
+                        <option>Jango</option>
+                        <option>WV</option>
+                        <option>BWM</option>
+                    </select>
+                </div>
+                <div class="form-group-row">
+                    <label for="preisKategorie" class="col-sm-2" required>Preiskategorie</label>
+                    <input type="radio" value="kleinKind" id="preisKategorie" name="kategorieRadioButton">
+                    <label for="kleinKind">Kleinkind</label>
+                    <input type="radio" value="schueler" id="preisKategorie" name="kategorieRadioButton">
+                    <label for="schueler">Schüler</label>
+                    <input type="radio" value="student" id="preisKategorie" name="kategorieRadioButton">
+                    <label for="student">Student</label>
+                    <input type="radio" value="erwachsener" id="preisKategorie" name="kategorieRadioButton">
+                    <label for="erwachsener">Erwachsener</label>
+                    <input type="radio" value="rentner" id="preisKategorie" name="kategorieRadioButton">
+                    <label for="rentner">Rentner</label>
+                </div>
+                <div class="date-group">
+                    <label for="datetime" id="you" class="col-sm-2">Datum von: </label>
+                    <input type="datetime-local" autocomplete="on" onfocus="displayDate();" value="displayDate();"
+                        name="datetime" required id="vonDatum">
+                </div>
+                <div class="date-group bis">
+                    <label for="dateTime" class="col-sm-2">Datum bis: </label>
+                    <input type="datetime-local" onfocus="displayDateThree();" name="dateTime" required id="bisDatum">
+                </div>
+                <div class="spende">
+                    <label for="zusatzSpende" class="col-sm-2">Zusatzspende</label>
+                    <input type="number" name="zusatzSpende" required>
+                </div>
+                <div class="sitzPlatz">
+
+                    <p></p>
+                    <!-- Image Map Generated by http://www.image-map.net/ -->
+                    <img src="../images/großer-saal.jpg" usemap="#image-map">
+
+                    <map name="image-map">
+                        <area alt="Sitzplatz 55" title="Sitzplatz 55" href="" coords="145,216,161,235" shape="rect">
+                        <area target="_self" alt="Sitzplatz 56" title="Sitzplatz 56" href="Test();"
+                            coords="120,216,138,233" shape="rect">
+                        <area target="_self" alt="Sitzplatz 57" title="Sitzplatz 57" href="" coords="97,215,114,234"
+                            shape="rect">
+                        <area target="_self" alt="Sitzplatz 58" title="Sitzplatz 58" href="" coords="73,215,89,235"
+                            shape="rect">
+                        <area target="_self" alt="Sitzplatz 59" title="Sitzplatz 59" href="" coords="49,215,65,234"
+                            shape="rect">
+                        <area target="_blank" alt="Sitzplatz 60" title="Sitzplatz 60" href="" coords="24,214,43,234"
+                            shape="rect">
+                    </map>
+                    <p></p>
+                    <label for="sitzPlatz" class="col-sm-2">Sitzplatz</label>
+                    <input type="text" id="sitPlatz" readonly>
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Sicht
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Die Sicht: </h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="../images/kinoPlatz.jpg" alt="kinoPlatz" height="200px" width="300px">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                                    <button type="button" class="btn btn-primary" onclick="sicht();">freigeben</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <fieldset disabled>
+                <div class="containerRechnung">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <label for="rgleichL" value=""></label>
+                            <input type="radio" id="rgleichL" name="rechnung">Rechnungsadresse gleich Lieferadresse
+                        </div>
+                        <div class="col-sm-5">
+                            <label for="abRechnungsadresse" value=""></label>
+                            <input type="radio" id="abRechnungsadresse" name="rechnung">Abweichender
+                            Rechnungsempfänger</div>
+                    </div>
+                </div>
+            </fieldset>
+
+        </div>
+        <fieldset>
+            <div class="card">
+                <div class="card-header">
+                    <h2>Bezahloption</h2>
+                </div>
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-50">
+                            <label for="bA-visa" class="col-sm-2" value=""></label>
+                            <input type="radio" name="bezahlArt" id="bA-visa"><i class="fa fa-cc-visa fa-2x"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-50">
+                            <label for="bA-master" class="col-sm-2" value=""></label>
+                            <input type="radio" name="bezahlArt" id="bA-master"><i class="fa fa-cc-mastercard fa-2x"
+                                aria-hidden="true"></i>
+                        </div>
+                        <div class="col-50">
+                            <label for="bA-rechnung" class="col-sm-2" value=""></label>
+                            <input type="radio" name="bezahlArt" id="bA-rechnung"><i
+                                class="fas fa-file-invoice-dollar fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </fieldset>
+        <fieldset>
+
+
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Kartenzahlung</h2>
+                </div>
+                <div class="card-body">
+                    <div class="containerKarte">
+                        <div class="kartenNutzer">
+                            <label for="nameKartenNutzer" class="col-md-2">Name des Karteninhabers </label>
+                            <input type="text" maxlength="100" required id="nameKartenNutzer">
+                        </div>
+                        <div class="kartenNummer">
+                            <label for="kartennummer" class="col-md-2">Kartennummer </label>
+                            <input type="text" required name="kartennummer" id="kartennummer">
+                        </div>
+                        <div class="pruefZiffer">
+                            <label for="pruefZiffer" class="col-md-2">Prüfziffer </label>
+                            <input type="number" required pattern="\d*" data-mask="000" name="pruefZiffer">
+                        </div>
+                        <div>
+                            <input type="submit" formaction="http://www.141.79.64.139/cstippek/FormCheck.php"
+                                class="buttonFarbe">
+                            </a></button>
+                            <input type="reset" class="buttonFarbe" value="Reset">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </form>
+
+    </fieldset>
+
+    </div>
+
+    <footer class="p-3">
+        <nav id="nav3">
+            <!-- Inhalte nicht als Listen-Elemente, nur Aneinanderreihung von Link-Elementen -->
+            <span>&copy 2020</span>
+            <span class="bl">|</span>
+            <a href="impressum.html"> Impressum</a>
+            <span class="bl">|</span>
+            <a href="datenschutz.html"> Datenschutz</a>
+            <span class="bl">|</span>
+            <a href="erklaerungBF.html"> Erklärung zur Barrierefreiheit</a>
+            <span class="bl">|</span>
+            <a href="agbs.html"> AGBs</a>
+
+
+        </nav>
+    </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

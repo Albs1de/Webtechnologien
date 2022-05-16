@@ -1,0 +1,143 @@
+@import url("./print.css") print;
+@import url("./mobile.css");
+
+body {
+  background-color: silver;
+}
+
+.tables {
+  width: 50%;
+}
+
+.buttonFarbe {
+  background-color: green;
+}
+
+.inputText {
+  width: 80%;
+}
+
+.formular {
+  border: 1px solid red;
+}
+
+#mapid {
+  height: 500px;
+  width: 500px;
+}
+
+.loginBereich {
+  display: flex;
+}
+
+.loginFormular {
+  border: 1px solid blue;
+}
+
+.loginRahmen {
+  border: 1px solid magenta;
+}
+
+.p-1 {
+  padding-top: 20px !important;
+  animation-name: headerAnimation;
+  animation-duration: 15s;
+}
+
+.p-2 {
+  padding-top: 10px !important;
+}
+
+.p-3 {
+  padding-top: 50px !important;
+}
+
+.container2 {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.container3 {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.drei {
+  width: 700px;
+}
+
+.vier {
+  padding-left: 10px;
+}
+
+.checked {
+  color: orange;
+}
+
+.drei {
+  background-color: cadetblue;
+  font-family: cursive;
+}
+
+.artikel1 {
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+
+.artikel2 {
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+
+.artikel3 {
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+
+.artikel4 {
+  border: 1px solid blue;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: cornflowerblue;
+}
+
+.baum {
+  float: right;
+}
+
+@keyframes headerAnimation {
+  from { background-color: white; }
+  to { background-color: red; }
+}
+
+@keyframes logoAnimation {
+  0% { left: 0px; top: 0px; }
+  25% { left: 1000px; top: 0px; }
+  50% { left: 500px; top: 200px; }
+  75% { left: 0px; top: 200px; }
+  100% { left: 0px; top: 0px; }
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.navbar-brand {
+  position: relative;
+  animation-name: logoAnimation;
+  animation-duration: 15s;
+}

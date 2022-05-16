@@ -1,0 +1,150 @@
+
+@media (max-device-width: 320px) {
+    .grid {
+      display: grid;
+      width: 100%;
+      height: 100px;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "item1 item1 item1 item1 item1 item1 item1"
+        "item1 item1 item1 item1 item1 item1 item1"
+        "item2 item2 item2 item2 item2 item2 item2"
+        "item6 item6 item6 item6 item6 item6 item6"
+        "item11 item11 item11 item11 item11 item11 item11";
+    }
+  
+    .item1 {
+      grid-area: item1;
+    }
+  
+    .item2 {
+      grid-area: item2;
+    }
+  
+    .item6 {
+      grid-area: item6;
+    }
+  
+    .item11 {
+      grid-area: item11;
+    }
+  
+    .item13,
+    .item12,
+    .item10,
+    .item9,
+    .item8,
+    .item7,
+    .item5,
+    .item4,
+    .item3 {
+      display: none;
+    }
+  
+    .item1,
+    .item2,
+    .item6,
+    .item11 {
+      background-color: blue;
+    }
+  
+    .body {
+      background-color: silver;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media (min-device-width: 321px) {
+    .grid {
+      display: grid;
+      width: 750px;
+      height: 600px;
+      grid-gap: 1rem;
+      grid-template-areas:
+        "item11 item11 item11 item11 item11 item11 item10"
+        "item12 item7 item7 item7 item7 item6 item10"
+        "item12 item8 item3 item3 item2 item6 item10"
+        "item12 item8 item4 item1 item2 item6 item10"
+        "item12 item8 item4 item5 item5 item5 item10"
+        "item12 item8 item9 item9 item9 item9 item9"
+        "item12 item13 item13 item13 item13 item13 item13";
+    }
+  
+    .item1 {
+      grid-area: item1;
+    }
+  
+    .item2 {
+      grid-area: item2;
+    }
+  
+    .item3 {
+      grid-area: item3;
+    }
+  
+    .item4 {
+      grid-area: item4;
+    }
+  
+    .item5 {
+      grid-area: item5;
+    }
+  
+    .item6 {
+      grid-area: item6;
+    }
+  
+    .item7 {
+      grid-area: item7;
+    }
+  
+    .item8 {
+      grid-area: item8;
+    }
+  
+    .item9 {
+      grid-area: item9;
+    }
+  
+    .item10 {
+      grid-area: item10;
+    }
+  
+    .item11 {
+      grid-area: item11;
+    }
+  
+    .item12 {
+      grid-area: item12;
+    }
+  
+    .item13 {
+      grid-area: item13;
+    }
+  
+    .body {
+      background-color: silver;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .item13,
+    .item12,
+    .item11,
+    .item10,
+    .item9,
+    .item8,
+    .item7,
+    .item6,
+    .item5,
+    .item4,
+    .item3,
+    .item2,
+    .item1 {
+      background-color: blue;
+    }
+  }
+  

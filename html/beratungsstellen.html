@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="de">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Web-Technologien</title>
+	<meta name="language" content="de">
+	<meta name="author" content ="Driton Koskovik">
+	<meta name="date" content="2020-11-29">
+	<meta name="keywords" content="meinFussabdruck, ökologischer Fussabdruck, Klimawandel ">
+	<meta name="description" content="Alle Informationen für unsere Veranstaltungen">
+	<meta name="robots" content="index, follow">
+	<meta name="audience" content="alle">
+	<meta name="page-topic" content="Hochschule Offenburg">
+	<meta name="revisit-after" CONTENT="7 days">
+	<meta name="expires" content="0">
+	<!-- Bootstrap CSS -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/default.css">
+	<title>Mein Fussabdruck</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+	<script src="../js/beratungJS.js"></script>
+	<script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet' />
+	
+</head>
+
+<body onload="myMaps()" >
+	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#"><img src="../images/LogoNeu.png" alt="logo"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul id="nav1" class="navbar-nav">
+					<li class="nav-item"><a class="nav-link" href="./home.html">Home</a></li>
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="./ueberUns.html"
+						id="navbarDropdownMenu1" role="button" data-toggle="dropdown"> Über uns </a>
+						<div class="dropdown-menu">
+						<a class="dropdown-item" href="./ueberUns.html#allgemein">Allgemein</a>
+						<a class="dropdown-item" href="./ueberUns.html#whyus">Warum es uns gibt</a>
+						<a class="dropdown-item" href="./ueberUns.html#beratungsstellen">Beratungsstellen</a>
+						<a class="dropdown-item" href="./ueberUns.html#benefits">Was DU davon hast</a>
+						<a class="dropdown-item" href="./ueberUns.html#partner">Unsere Partner</a>
+						<a class="dropdown-item" href="./ueberUns.html#referenzen">Referenzen</a>
+						<a class="dropdown-item" href="./fakten.html#">Fakten</a>
+						</div>
+						</li>
+					<li class="nav-item"><a class="nav-link" href="./potentiale.html">Potentiale</a></li>
+					<li class="nav-item"><a class="nav-link" href="./veranstaltungen.html">Veranstaltungen</a></li>
+					<li class="nav-item"><a class="nav-link" href="./beratungsstellen.html">Beratungsstellen</a></li>
+					<li class="nav-item"><a class="nav-link" href="./allerlei.html">Allerlei</a></li>
+				</ul>
+				<ul id="nav2" class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="./suche.html"><i class="fas fa-search"></i> Suche</a> </li>
+					<li class="nav-item"><a class="nav-link" href="./meinKonto.html"><i class="fas fa-user-alt"></i> mein Konto</a></li>
+					<li class="nav-item"><a class="nav-link" href="./kontakt.html"><i class="fas fa-envelope"></i> Kontakt</a></li>
+				</ul>
+			</div>
+        </nav>
+        
+        
+
+
+
+
+
+		<header class="p-1 text-center">
+
+		</header>
+		<main class="p-2">
+
+        </main>
+		<div id="mapid"></div>
+		<div id='map' style='width: 400px; height: 300px;'onload="Newmap()"></div>
+		
+            
+        </div>
+		<footer class="p-3">
+			<nav id="nav3">
+				<!-- Inhalte nicht als Listen-Elemente, nur Aneinanderreihung von Link-Elementen -->
+				<span>&copy 2020</span>
+				<span class="bl" >|</span>
+				<a href="impressum.html"> Impressum</a>
+				<span class="bl" >|</span>
+				<a href="datenschutz.html"> Datenschutz</a>
+				<span class="bl" >|</span>
+				<a href="erklaerungBF.html"> Erklärung zur Barrierefreiheit</a>
+				<span class="bl" >|</span>
+				<a href="agbs.html"> AGBs</a>
+				
+				
+			</nav>
+		</footer>
+	</div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>

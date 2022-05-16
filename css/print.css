@@ -1,0 +1,43 @@
+ 
+@media screen {
+    h1 {
+        text-align: right;
+        border-bottom: 3px dashed #00f;
+        color: #008;
+        
+    }
+    * {
+        background-color: inherit;
+        font-family: sans-serif;
+    }
+}
+
+@media print {
+    h1, article {
+        color: #000;
+        background-color: #fff;
+        
+    }
+   p {
+        font-family:  'Times New Roman', Times, serif;
+        text-align: justify;
+    }
+    article {
+        background-color: white;
+        color: black;
+    }
+  
+    
+#id {
+    display: none;
+}
+element {
+    display: none;
+}
+.klasse {
+    display: none;
+}
+video {
+    display: none;
+}
+}
